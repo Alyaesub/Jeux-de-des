@@ -1,0 +1,59 @@
+.animate-fusée {
+    transition: all 1s ease;
+    display: inline-block;
+    margin-left: 10px;
+    &:hover {
+        animation: movefusee 2s ease;
+    }
+}
+
+@keyframes movefusee {
+    0% {
+        transform: translateY(0);
+    }
+    10%{
+        transform: translate(-2px, 2px);
+    }
+    20% {
+        transform: translate(2px, -2px);
+    }
+    30% {
+        transform: translate(-1px, 1px);
+    }
+    72% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(-550px);
+    }
+}
+
+.animate-police-car-light {
+    transition: all 1s ease;
+    display: inline-block;
+    margin-left: 10px;
+    &:hover {
+        animation: movelight 2s ease;
+    }
+}
+
+@keyframes movelight {
+    0% {
+        transform: translateX(0);
+    }
+    10%{
+        transform: translate(-2px, 2px);
+    }
+    20% {
+        transform: translate(2px, -2px);
+    }
+    30% {
+        transform: translate(-1px, 1px);
+    }
+    72% {
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(-550px);
+    }
+}
