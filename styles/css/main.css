@@ -101,10 +101,19 @@ footer {
   background: #86562d;
 }
 
-.navigation .nav-links .nav-link a {
+.navigation {
+  width: 40%;
+}
+.navigation .nav-links {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  list-style: none;
+}
+.navigation .nav-links .nav-link {
+  line-height: 2rem;
+}
+.navigation .nav-links .nav-link a {
   text-decoration: none;
   color: #333;
   font-weight: 500;

@@ -1,17 +1,17 @@
 .navigation {
-    
-    .nav-links {
-        
-        .nav-link {
-            
-            a {
-                display: flex;
-                flex-direction: column;
-                padding-left: 20px;
-                text-decoration: none;
-                color: $text-color;
-                font-weight: 500;
+    width: 40%;
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            list-style: none;
+            .nav-link {
+                line-height: 2rem;
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    font-weight: 500;
+                }
             }
         }
-    }
 }
