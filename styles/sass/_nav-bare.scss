@@ -1,0 +1,17 @@
+.navigation {
+    
+    .nav-links {
+        
+        .nav-link {
+            
+            a {
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                text-decoration: none;
+                color: $text-color;
+                font-weight: 500;
+            }
+        }
+    }
+}

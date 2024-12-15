@@ -99,4 +99,13 @@ footer {
 }
 .btn:hover {
   background: #86562d;
+}
+
+.navigation .nav-links .nav-link a {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
