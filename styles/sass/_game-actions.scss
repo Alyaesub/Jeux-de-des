@@ -1,0 +1,10 @@
+.game-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column; // Boutons empilés sur mobile
+        gap: 1rem;
+    }
+}    
