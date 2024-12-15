@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+@import "variables";
 
 main {
     display: flex;
@@ -19,7 +20,6 @@ main {
 
 .titre-page {
     text-align: center;
-    padding-top: 10px;
 }
 
 header {
