@@ -205,19 +205,22 @@ picture.emoji-gif img {
     transform: translateX(0);
   }
   10% {
-    transform: translate(-2px, 2px);
+    transform: translateX(-10px);
   }
   20% {
-    transform: translate(2px, -2px);
+    transform: translateX(10px);
   }
   30% {
-    transform: translate(-1px, 1px);
+    transform: translateX(-5px);
   }
-  72% {
-    transform: translateX(-30px);
+  40% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-550px);
+    transform: translateX(2000px);
   }
 }
 .animate-image-regles {
@@ -228,9 +231,9 @@ picture.emoji-gif img {
 .animate-image-regles:hover {
   animation: movedesregles 3s ease forwards;
 }
-
-.text-animate-des {
+.animate-image-regles .text-animate-des {
   font-size: 2rem;
+  padding-bottom: 15px;
 }
 
 @keyframes movedesregles {
@@ -273,6 +276,10 @@ picture.emoji-gif img {
 }
 .text-content-regles .text-paragraphe {
   font-family: DynaPuff, sans-serif;
+}
+
+.titre-page h1 {
+  padding-top: 20px;
 }
 
 .display-text .text-content-regles {

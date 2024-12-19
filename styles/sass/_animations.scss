@@ -47,22 +47,25 @@ picture.emoji-gif {
 
 @keyframes movelight {
     0% {
-        transform: translateX(0);
+        transform: translateX(0); // Position de départ
     }
-    10%{
-        transform: translate(-2px, 2px);
+    10% {
+        transform: translateX(-10px); // Petit déplacement à gauche
     }
     20% {
-        transform: translate(2px, -2px);
+        transform: translateX(10px); // Petit déplacement à droite
     }
     30% {
-        transform: translate(-1px, 1px);
+        transform: translateX(-5px); // Retourne légèrement à gauche
     }
-    72% {
-        transform: translateX(-30px);
+    40% {
+        transform: translateX(5px); // Retourne légèrement à droite
+    }
+    50% {
+        transform: translateX(0); // Retour au centre
     }
     100% {
-        transform: translateX(-550px);
+        transform: translateX(2000px); // Finit à droite
     }
 }
 
@@ -73,11 +76,14 @@ picture.emoji-gif {
     &:hover {
         animation: movedesregles 3s ease forwards;
     }
+
+    .text-animate-des {
+        font-size: $title-h2;
+        padding-bottom: 15px;
+    }
 }
 
-.text-animate-des {
-    font-size: $title-h2;
-}
+
 
 @keyframes movedesregles {
     0% {
