@@ -53,12 +53,26 @@ footer {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .player-section .player h2 {
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   color: #bf7b40;
 }
-.player-section .player .global-score, .player-section .player .round-score {
+.player-section .player .scores {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.player-section .player .scores .global-score {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.player-section .player .scores .round-score {
   font-size: 1.2rem;
   margin: 0.5rem 0;
 }
@@ -129,6 +143,11 @@ footer {
 
 .nav-link a {
   font-family: DynaPuff, sans-serif;
+}
+
+picture.emoji-gif img {
+  width: 1em;
+  height: 1em;
 }
 
 .animate-fusée {
