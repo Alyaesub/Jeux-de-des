@@ -14,10 +14,20 @@
         }
 
         .text-paragraphe {
-            padding-top: 40px;
-            max-width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-top: 100px;
             font-size: 1.5rem;
             line-height: 2.5rem;
+
+            .image-des-regles {
+                max-width: 30%;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
         }
     }
 }

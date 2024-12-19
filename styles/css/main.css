@@ -220,6 +220,38 @@ picture.emoji-gif img {
     transform: translateX(-550px);
   }
 }
+.animate-image-regles {
+  transition: all 1s ease;
+  display: inline-block;
+  margin-left: 50px;
+}
+.animate-image-regles:hover {
+  animation: movedesregles 3s ease forwards;
+}
+
+@keyframes movedesregles {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-10px);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
 .titre-page h1 {
   font-family: Atma, sans-serif;
 }
@@ -249,8 +281,17 @@ picture.emoji-gif img {
   font-size: 2rem;
 }
 .display-text .text-content-regles .text-paragraphe {
-  padding-top: 40px;
-  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 100px;
   font-size: 1.5rem;
   line-height: 2.5rem;
+}
+.display-text .text-content-regles .text-paragraphe .image-des-regles {
+  max-width: 30%;
+}
+.display-text .text-content-regles .text-paragraphe .image-des-regles img {
+  max-width: 100%;
+  max-height: 100%;
 }/*# sourceMappingURL=main.css.map */

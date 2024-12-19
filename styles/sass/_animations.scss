@@ -65,3 +65,37 @@ picture.emoji-gif {
         transform: translateX(-550px);
     }
 }
+
+.animate-image-regles{
+    transition: all 1s ease;
+    display: inline-block;
+    margin-left: 50px;
+    &:hover {
+        animation: movedesregles 3s ease forwards;
+    }
+}
+
+@keyframes movedesregles {
+    0% {
+        transform: translateX(0); // Position de départ
+    }
+    10% {
+        transform: translateX(-10px); // Petit déplacement à gauche
+    }
+    20% {
+        transform: translateX(10px); // Petit déplacement à droite
+    }
+    30% {
+        transform: translateX(-5px); // Retourne légèrement à gauche
+    }
+    40% {
+        transform: translateX(5px); // Retourne légèrement à droite
+    }
+    50% {
+        transform: translateX(0); // Retour au centre
+    }
+    100% {
+        transform: translateX(2000px); // Finit à droite
+    }
+}
+
