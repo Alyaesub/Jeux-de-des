@@ -1,4 +1,5 @@
 @import "variables";
+@import "typography";
 
 .display-text {
     
@@ -8,12 +9,15 @@
         flex-wrap: wrap;
 
         h2 {
+            padding-top: 40px;
             font-size: $title-h2;
-            font-family: Atma, sans-serif; ;
         }
 
         .text-paragraphe {
+            padding-top: 40px;
             max-width: 50%;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
         }
     }
 }

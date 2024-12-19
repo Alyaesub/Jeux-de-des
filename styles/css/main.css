@@ -150,6 +150,13 @@ footer {
   font-family: DynaPuff, sans-serif;
 }
 
+.text-content-regles h2 {
+  font-family: Atma, sans-serif;
+}
+.text-content-regles .text-paragraphe {
+  font-family: DynaPuff, sans-serif;
+}
+
 picture.emoji-gif img {
   width: 1em;
   height: 1em;
@@ -213,15 +220,37 @@ picture.emoji-gif img {
     transform: translateX(-550px);
   }
 }
+.titre-page h1 {
+  font-family: Atma, sans-serif;
+}
+
+.player-section h2 {
+  font-family: Atma, sans-serif;
+}
+
+.nav-link a {
+  font-family: DynaPuff, sans-serif;
+}
+
+.text-content-regles h2 {
+  font-family: Atma, sans-serif;
+}
+.text-content-regles .text-paragraphe {
+  font-family: DynaPuff, sans-serif;
+}
+
 .display-text .text-content-regles {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 .display-text .text-content-regles h2 {
+  padding-top: 40px;
   font-size: 2rem;
-  font-family: Atma, sans-serif;
 }
 .display-text .text-content-regles .text-paragraphe {
+  padding-top: 40px;
   max-width: 50%;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }/*# sourceMappingURL=main.css.map */
