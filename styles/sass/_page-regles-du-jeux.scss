@@ -1,0 +1,19 @@
+@import "variables";
+
+.display-text {
+    
+    .text-content-regles {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        h2 {
+            font-size: $title-h2;
+            font-family: Atma, sans-serif; ;
+        }
+
+        .text-paragraphe {
+            max-width: 50%;
+        }
+    }
+}

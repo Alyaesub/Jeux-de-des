@@ -24,8 +24,11 @@ main {
 
 header {
     padding: 5px;
-    height: 200px ;
+    height: 250px ;
     background-color: $header-color;
+    h1 {
+        font-size: 3rem;
+    }
 }
 
 footer {
