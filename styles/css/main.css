@@ -105,6 +105,26 @@ footer {
     font-size: 1rem;
   }
 }
+.dice .dice-face {
+  font-size: 8rem;
+  margin: 1rem auto;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border: 2px solid #bf7b40;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.dice .dice-result {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #bf7b40;
+}
 
 .btn {
   background: #bf7b40;
@@ -112,7 +132,7 @@ footer {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -155,6 +175,14 @@ footer {
   font-family: Atma, sans-serif;
 }
 .text-content-regles .text-paragraphe {
+  font-family: DynaPuff, sans-serif;
+}
+
+.dice-result {
+  font-family: Atma, sans-serif;
+}
+
+.btn {
   font-family: DynaPuff, sans-serif;
 }
 
@@ -276,6 +304,14 @@ picture.emoji-gif img {
   font-family: Atma, sans-serif;
 }
 .text-content-regles .text-paragraphe {
+  font-family: DynaPuff, sans-serif;
+}
+
+.dice-result {
+  font-family: Atma, sans-serif;
+}
+
+.btn {
   font-family: DynaPuff, sans-serif;
 }
 

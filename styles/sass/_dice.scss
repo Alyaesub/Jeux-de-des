@@ -1,3 +1,5 @@
+@import "variables";
+
 .dice {
     grid-column: span 2; // Occupe toute la largeur
     text-align: center;
@@ -5,8 +7,29 @@
     font-weight: bold;
     margin-top: 1rem;
 
-
     @media (max-width: 768px) {
         font-size: 1rem; // Texte plus petit sur mobile
+    }
+
+    .dice-face {
+        font-size: 8rem;
+        margin: 1rem auto;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background: #fff;
+        border: 2px solid $primary-color; 
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out; // Ajoute une transition fluide
+    }
+
+    .dice-result {
+        margin-top: 2rem;
+        font-size: $title-h2;
+        color: $primary-color;
     }
 }
