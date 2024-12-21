@@ -107,11 +107,11 @@ footer {
   }
 }
 .dice .dice-face {
-  font-size: 7rem;
+  font-size: 4rem;
   margin: 1rem auto;
   display: inline-block;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background: green;
   border: 4px solid black;
   border-radius: 50%;
@@ -119,7 +119,11 @@ footer {
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.9);
-  transition: transform 0.3s ease-in-out;
+}
+.dice .dice-face .rolling-element {
+  animation: roll 2s infinite linear; /* Animation continue */
+  max-width: 70%;
+  max-height: 70%;
 }
 .dice .dice-result {
   margin-top: 2rem;
@@ -287,6 +291,14 @@ picture.emoji-gif img {
   }
   100% {
     transform: translateX(2000px);
+  }
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0deg); /* Départ */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotation complète */
   }
 }
 .titre-page h1 {

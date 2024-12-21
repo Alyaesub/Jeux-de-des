@@ -109,3 +109,11 @@ picture.emoji-gif {
     }
 }
 
+@keyframes roll {
+    0% {
+        transform: rotate(0deg); /* Départ */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotation complète */
+    }
+}
