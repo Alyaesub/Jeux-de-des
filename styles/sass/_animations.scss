@@ -83,8 +83,6 @@ picture.emoji-gif {
     }
 }
 
-
-
 @keyframes movedesregles {
     0% {
         transform: translateX(0); // Position de départ
@@ -109,7 +107,10 @@ picture.emoji-gif {
     }
 }
 
-@keyframes roll-animation { /*animation de la rotation du dés*/
+.rolling { /*animation de la rotation du dés*/
+    animation: roll-animation 2s cubic-bezier(.16,.35,.06,.9); /*classe ajouter pour l'animation JS*/
+}
+@keyframes roll-animation {
     0% {
         transform: rotate(0);
     }

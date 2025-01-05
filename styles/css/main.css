@@ -127,9 +127,6 @@ footer {
   width: 150px;
   height: 150px;
 }
-.dice .dice-face .rolling {
-  animation: roll-animation 2s cubic-bezier(0.16, 0.35, 0.06, 0.9); /*classe ajouter pour l'animation JS*/
-}
 .dice .dice-result {
   margin-top: 2rem;
   font-size: 2rem;
@@ -298,7 +295,11 @@ picture.emoji-gif img {
     transform: translateX(2000px);
   }
 }
-@keyframes roll-animation { /*animation de la rotation du dés*/
+.rolling { /*animation de la rotation du dés*/
+  animation: roll-animation 2s cubic-bezier(0.16, 0.35, 0.06, 0.9); /*classe ajouter pour l'animation JS*/
+}
+
+@keyframes roll-animation {
   0% {
     transform: rotate(0);
   }
