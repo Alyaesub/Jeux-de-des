@@ -109,11 +109,11 @@ picture.emoji-gif {
     }
 }
 
-@keyframes roll {
+@keyframes roll-animation { /*animation de la rotation du dés*/
     0% {
-        transform: rotate(0deg); /* Départ */
+        transform: rotate(0);
     }
     100% {
-        transform: rotate(360deg); /* Rotation complète */
+        transform: rotate(360deg);
     }
 }

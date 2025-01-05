@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     <title>Jeux 2 Dés</title>
     <link rel="stylesheet" href="./styles/css/main.css">
-    <script src="script\script.js"></script>
+    <script src="script\script.js" defer></script>
 </head>
 <body>
     <header>
@@ -71,19 +71,21 @@
         <!-- Section pour les actions -->
         <section class="game-actions">
             <button class="btn roll" id="rollDice">Lancer le dé</button>
-            <button class="btn hold">Hold</button>
+            <button class="btn hold" id="hold-score">Hold</button>
         </section>
     
         <!-- Section pour afficher le résultat du dé -->
         <section class="dice">
-            <div class="dice-face" id="dice"><img class="rolling-element" src="assets\game-die.256x256-removebg-preview.png"></div>
+            <div class="dice-face" id="dice">
+                <img class="rolling-element" src="assets\game-die.256x256-removebg-preview.png">
+            </div>
             <p class="dice-result" id="diceResult">Lancer le dé pour jouer!</p>
         </section>
     </main>
     <footer>
         <h2>Liens:</h2>
         mon github et lindink
-    </footer>
+    </footer>2
     
 </body>
 </html>

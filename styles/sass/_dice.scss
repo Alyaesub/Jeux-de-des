@@ -25,10 +25,16 @@
             align-items: center;
             box-shadow: 0 8px 10px rgba(0, 0, 0, 0.9);
             
-            .rolling-element {
-                animation: roll 2s infinite linear; /* Animation continue */
-                max-width: 60%;
-                max-height: 60%;
+            .rolling-element { /*classe de l'image du dés*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 150px;
+            }
+
+            .rolling {
+                animation: roll-animation 1s cubic-bezier(1, 1, 1, 0.7); /*classe ajouter pour l'animation JS*/
             }
         }
         

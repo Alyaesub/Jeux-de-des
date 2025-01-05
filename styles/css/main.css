@@ -120,10 +120,15 @@ footer {
   align-items: center;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.9);
 }
-.dice .dice-face .rolling-element {
-  animation: roll 2s infinite linear; /* Animation continue */
-  max-width: 60%;
-  max-height: 60%;
+.dice .dice-face .rolling-element { /*classe de l'image du dés*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+.dice .dice-face .rolling {
+  animation: roll-animation 1s cubic-bezier(1, 1, 1, 0.7); /*classe ajouter pour l'animation JS*/
 }
 .dice .dice-result {
   margin-top: 2rem;
@@ -293,12 +298,12 @@ picture.emoji-gif img {
     transform: translateX(2000px);
   }
 }
-@keyframes roll {
+@keyframes roll-animation { /*animation de la rotation du dés*/
   0% {
-    transform: rotate(0deg); /* Départ */
+    transform: rotate(0);
   }
   100% {
-    transform: rotate(360deg); /* Rotation complète */
+    transform: rotate(360deg);
   }
 }
 .titre-page h1 {
