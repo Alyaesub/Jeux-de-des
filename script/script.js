@@ -1,6 +1,6 @@
 console.log("teste réussi");
 
-/////////////////////// ANIMATION DU DES //////////////////////////////////////////////////////
+///////////////////////ANIMATION DU DES///////////////////////////////////////////////////////
 
 const rollButton = document.getElementById("rollDice"); // Bouton pour lancer le dé
 const diceFace = document.querySelector(".rolling-element"); // Image du dé
@@ -31,4 +31,4 @@ function rollDice() {
 // Associe la fonction au clic sur le bouton
 rollButton.addEventListener("click", rollDice);
 
-////////////////////////////  FIN DE L'ANIMATION  ////////////////////////////
+////////////////////////////FIN DE L'ANIMATION/////////////////////////////
