@@ -1,13 +1,19 @@
 console.log("teste réussi");
 
-let totalScore = 0;
-let roundScore = 0;
-
-/////////////////////// ANIMATION DU DES //////////////////////////////////
-
+// Sélection des éléments du DOM
 const rollButton = document.getElementById("rollDice"); // Bouton pour lancer le dé
 const diceFace = document.querySelector(".rolling-element"); // Image du dé
 const diceResult = document.getElementById("diceResult"); // Affiche le resultat du dés
+
+// Sélection des éléments des joueurs
+const player1 = document.querySelector(".player-1");
+const player2 = document.querySelector(".player-2");
+
+// Variables pour suivre les scores et le joueur actif
+let scores = [0, 0]; // scores globaux des joueurs
+let totalScore = 0;
+let roundScore = 0;
+let activePlayer = 0; // 0 pour Joueur 1, 1 pour Joueur 2
 
 function rollDice() {
 	// Fonction pour lancer le dé
@@ -38,8 +44,8 @@ function rollDice() {
 			// Sinon, ajoute le résultat au score du round
 			roundScore += result;
 			document.querySelector(
-				".player.active .round-score"
-			).textContent = `Score du Tour : ${roundScore}`;
+				".player.active .round-score span"
+			).textContent = roundScore;
 		}
 	}, 2000); //2 secondes
 }
