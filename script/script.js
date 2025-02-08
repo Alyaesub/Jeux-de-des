@@ -46,7 +46,7 @@ function rollDice() {
 			// Si le résultat est 1, le score du round est réinitialisé
 			roundScore = 0;
 			updateRoundScore(activePlayer, roundScore);
-			diceResult.textContent = " Oups!!! t'a fait un 1!!!!";
+			diceResult.textContent = " Oups!!! t'a fait 1!!!!";
 			//delai avant de switch
 			await wait(1500);
 			switchPlayer();
