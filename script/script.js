@@ -2,16 +2,20 @@ console.log("teste réussi");
 
 // Sélection des éléments du DOM
 const rollButton = document.getElementById("rollDice"); // Bouton pour lancer le dé
+const holdButton = document.getElementById("hold-score");
 const diceFace = document.querySelector(".rolling-element"); // Image du dé
 const diceResult = document.getElementById("diceResult"); // Affiche le resultat du dés
 
 // Sélection des éléments des joueurs
 const player1 = document.querySelector(".player-1");
 const player2 = document.querySelector(".player-2");
+const globalScore1 = document.querySelector(".player-1 .globalScore .span");
+const globalScore2 = document.querySelector(".player-2 .globalScore .span");
+const roundScore1 = document.querySelector(".player-1 .round-score span");
+const roundScore2 = document.querySelector(".player-2 .round-score span");
 
 // Variables pour suivre les scores et le joueur actif
 let scores = [0, 0]; // scores globaux des joueurs
-let totalScore = 0;
 let roundScore = 0;
 let activePlayer = 0; // 0 pour Joueur 1, 1 pour Joueur 2
 
@@ -39,15 +43,23 @@ function rollDice() {
 		if (result === 1) {
 			// Si le résultat est 1, le score du round est réinitialisé
 			roundScore = 0;
+			updateRoundScore(activePlayer, roundScore);
 			diceResult.textContent = " Oups!!! t'a fait un 1!!!!";
 		} else {
 			// Sinon, ajoute le résultat au score du round
 			roundScore += result;
-			document.querySelector(
-				".player.active .round-score span"
-			).textContent = roundScore;
+			updateRoundScore(activePlayer, roundScore);
 		}
 	}, 2000); //2 secondes
+}
+
+// Fonction pour mettre à jour le score du round
+function updateRoundScore(player, score) {
+	if (player === 0) {
+		roundScore1.textContent = score;
+	} else {
+		roundScore2.textContent = score;
+	}
 }
 // Associe la fonction au clic sur le bouton
 rollButton.addEventListener("click", rollDice);
