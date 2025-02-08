@@ -11,6 +11,24 @@
                     text-decoration: none;
                     color: $text-color;
                     font-weight: 700;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            .navigation {
+                width: 100%; // La navbar prend toute la largeur
+            }
+        
+            .nav-links {
+                padding-left: 0; // Supprime l’espace à gauche pour centrer
+                align-items: center; // Centre les liens
+            }
+        
+            .nav-link {
+                text-align: center;
+                a {
+                    font-size: 1.2rem; // Réduit légèrement la taille du texte
                 }
             }
         }

@@ -1,0 +1,41 @@
+@import "variables";
+@import "typography";
+
+.titre-page {
+
+    h1 {
+        padding-top: 20px;
+    }
+}
+
+.display-text {
+    
+    .text-content-regles {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        h2 {
+            padding-top: 40px;
+            font-size: $title-h2;
+        }
+
+        .text-paragraphe {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-top: 100px;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+
+            .image-des-regles {
+                max-width: 30%;
+                img {
+                    max-width: 70%;
+                    max-height: 70%;
+                }
+            }
+        }
+    }
+}
