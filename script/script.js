@@ -16,7 +16,7 @@ const diceResult = document.getElementById("diceResult"); // Affiche le resultat
 function rollDice() {
 	// Réinitialise l'image du dé a chaque lancement
 	diceFace.src = "assets/game-die.256x256-removebg-preview.png";
-	diceResult.textContent = "Le dé roule...";
+	diceResult.textContent = "C'est parti mon KIKI!!!!";
 	// Ajoute une animation temporaire
 	diceFace.classList.add("rolling"); // Ajoute une classe pour déclencher l'animation
 	// Supprime l'animation après 2 secondes (durée de l'animation définie en CSS)
