@@ -4,16 +4,16 @@
   margin: 0;
 }
 
-main {
+html body main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  height: 100vh;
+  height: 100%;
   background-color: #e6cbb3;
 }
 @media (max-width: 768px) {
-  main {
+  html body main {
     grid-template-columns: 1fr;
   }
 }
@@ -168,6 +168,21 @@ footer {
   color: #333;
   font-weight: 700;
   font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .navigation .navigation {
+    width: 100%;
+  }
+  .navigation .nav-links {
+    padding-left: 0;
+    align-items: center;
+  }
+  .navigation .nav-link {
+    text-align: center;
+  }
+  .navigation .nav-link a {
+    font-size: 1.2rem;
+  }
 }
 
 .titre-page h1 {

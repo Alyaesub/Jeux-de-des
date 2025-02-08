@@ -48,7 +48,7 @@ function rollDice() {
 			updateRoundScore(activePlayer, roundScore);
 			diceResult.textContent = " Oups!!! t'a fait un 1!!!!";
 			//delai avant de switch
-			await wait(2000);
+			await wait(1500);
 			switchPlayer();
 			if (scores[activePlayer] >= 100) {
 				diceResult.textContent = ` !!🎉!!Le Gagnant est le Joueur ${
@@ -119,6 +119,20 @@ function resetGame() {
 	scores = [0, 0];
 	roundScore = 0;
 	activePlayer = 0;
+
+	//reset les scores
+	globalScore1.textContent = 0;
+	globalScore2.textContent = 0;
+	roundScore1.textContent = 0;
+	roundScore2.textContent = 0;
+
+	//reactive le joueur 1
+	player1.classList.add("active");
+	player2.classList.remove("active");
+
+	//reset l'affichage du dé
+	diceFace.src = "assets/game-die.256x256-removebg-preview.png";
+	diceResult.textContent = "Lancer le dé pour jouer!";
 }
 
 /////// EVENEMENT associe la fonction au clic sur le bouton
