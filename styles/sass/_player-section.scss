@@ -32,12 +32,11 @@
             color: $primary-color;
         }
 
-
             .scores{
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
-                bottom: 10rem;
                 left: 50%;
                 transform: translateX(-50%);
                 color: $primary-color;

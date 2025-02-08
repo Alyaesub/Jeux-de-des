@@ -69,9 +69,12 @@ footer {
   color: #bf7b40;
 }
 .player-section .player .scores {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #bf7b40;
   font-family: Atma, sans-serif;
   font-size: 1.5rem;
