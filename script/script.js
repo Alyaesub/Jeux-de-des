@@ -14,7 +14,7 @@ function rollDice() {
 
 	// Réinitialise l'image du dé
 	diceFace.src = "assets/game-die.256x256-removebg-preview.png";
-	diceResult.textContent = "Le dé roule...";
+	diceResult.textContent = "C'est parti mon KiKi...";
 	// Ajoute une animation temporaire
 	diceFace.classList.add("rolling"); // Ajoute une classe pour déclencher l'animation
 
@@ -28,18 +28,18 @@ function rollDice() {
 		diceFace.src = `assets/die-face-${result}.png`;
 
 		// Afficher le résultat sous le dé
-		diceResult.textContent = `Vous avez obtenu un ${result} !`;
+		diceResult.textContent = `Vous avez fait un ${result} !`;
 
 		if (result === 1) {
 			// Si le résultat est 1, le score du round est réinitialisé
 			roundScore = 0;
-			diceResult.textContent += " Oups ! Vous avez fait 1";
+			diceResult.textContent = " Oups!!! t'a fait un 1!!!!";
 		} else {
 			// Sinon, ajoute le résultat au score du round
 			roundScore += result;
 			document.querySelector(
 				".player.active .round-score"
-			).textContent = `Score du Tour :${roundScore}`;
+			).textContent = `Score du Tour : ${roundScore}`;
 		}
 	}, 2000); //2 secondes
 }
