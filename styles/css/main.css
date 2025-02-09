@@ -31,12 +31,6 @@ header h1 {
   font-size: 3rem;
 }
 
-footer {
-  display: flex;
-  height: 70px;
-  background-color: #bf7b40;
-}
-
 .player-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -381,4 +375,26 @@ picture.emoji-gif img {
 .display-text .text-content-regles .text-paragraphe .image-des-regles img {
   max-width: 70%;
   max-height: 70%;
+}
+
+footer {
+  display: flex;
+  height: 50px;
+  padding: 30px;
+  background-color: #bf7b40;
+  justify-content: space-between;
+  background-color: #bf7b40;
+}
+footer .credits {
+  text-align: right;
+}
+footer .liste-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
+}
+footer .liste-contact img {
+  width: 50px;
+  height: 50px;
 }/*# sourceMappingURL=main.css.map */
