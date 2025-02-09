@@ -382,16 +382,17 @@ footer {
   height: 50px;
   padding: 30px;
   background-color: #bf7b40;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: #bf7b40;
 }
 footer .credits {
-  text-align: right;
+  padding-left: 700px;
 }
 footer .liste-contact {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding-left: 20px;
   gap: 40px;
 }
 footer .liste-contact img {
