@@ -1,12 +1,15 @@
 .navigation {
     width: 40%;
+
         .nav-links {
             display: flex;
             flex-direction: column;
             padding-left: 20px;
             list-style: none;
+
             .nav-link {
                 line-height: 50px;
+
                 a {
                     text-decoration: none;
                     color: $text-color;
@@ -16,10 +19,8 @@
             }
         }
         @media (max-width: 768px) {
-            .navigation {
                 width: 100%; // La navbar prend toute la largeur
-            }
-        
+            
             .nav-links {
                 padding-left: 0; // Supprime l’espace à gauche pour centrer
                 align-items: center; // Centre les liens
@@ -27,6 +28,7 @@
         
             .nav-link {
                 text-align: center;
+                
                 a {
                     font-size: 1.2rem; // Réduit légèrement la taille du texte
                 }
