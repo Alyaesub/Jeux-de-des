@@ -7,7 +7,7 @@ footer {
     background-color: $footer-color;
 
     .credits {
-        padding-left: 700px;
+        padding-left: 1000px;
     }
 
     .liste-contact {
@@ -25,5 +25,10 @@ footer {
     
 }
 
+@media (max-width: 768px) {
+    .credits {
+        display: none;
+    }
+}
     
     
