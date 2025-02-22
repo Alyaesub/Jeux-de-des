@@ -3,6 +3,7 @@
 
 .titre-page {
 
+    
     h1 {
         padding-top: 20px;
     }
@@ -14,6 +15,10 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr; // Joueurs empilés sur mobile
+        }
 
         h2 {
             padding-top: 40px;

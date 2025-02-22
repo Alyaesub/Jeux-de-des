@@ -356,6 +356,11 @@ picture.emoji-gif img {
   flex-direction: column;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .display-text .text-content-regles {
+    grid-template-columns: 1fr;
+  }
+}
 .display-text .text-content-regles h2 {
   padding-top: 40px;
   font-size: 2rem;
